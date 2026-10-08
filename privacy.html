@@ -1,71 +1,109 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Helmavio — Privacy Policy</title><style>body{font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;max-width:760px;margin:0 auto;padding:32px 16px;color:#1b1f24;background:#fff}
-@media(prefers-color-scheme:dark){body{color:#e6e6e6;background:#14161a}a{color:#8ab4ff}}
-h1{font-size:28px}h2{font-size:20px;margin-top:28px}h3{font-size:17px;margin-top:22px}nav a{margin-right:16px}code{font-size:14px}hr{border:0;border-top:1px solid #8884;margin:28px 0}</style></head><body><nav><a href="index.html">Helmavio</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav><h1>Helmavio — Privacy Policy / Политика конфиденциальности</h1>
-<p>Last updated: 8 October 2026. Applies to Helmavio 1.1.0 and later.</p>
-<hr />
-<h2>English</h2>
-<p>Helmavio is a Windows desktop application. You describe a goal; built-in roles plan, run and verify the work with AI models <strong>that you choose</strong>. Helmavio has no cloud service, servers or accounts of its own, except the optional Helmavio Pro billing service (section 12).</p>
-<h3>1. Data stored on your computer</h3>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Helmavio</title><meta name="description" content="How Helmavio handles your data."><link rel="icon" href="icon.png">
+<style>
+:root{--bg:#ffffff;--bg2:#f6f7f9;--card:#ffffff;--fg:#14171c;--muted:#5b6472;--line:#e3e6eb;--accent:#4f46e5;--accent-soft:#eef0ff;--ok:#0f7b4f}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--bg2:#151820;--card:#171a21;--fg:#e8eaee;--muted:#9aa3b2;--line:#262b35;--accent:#8b85ff;--accent-soft:#1d1f35;--ok:#3ccf8e}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Inter,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--fg)}.brand img{width:30px;height:30px;border-radius:8px}
+nav.main{margin-left:auto;display:flex;gap:22px;font-size:15px}nav.main a{color:var(--muted)}nav.main a.on,nav.main a:hover{color:var(--fg);text-decoration:none}
+.hero{padding:72px 0 40px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--accent-soft),transparent)}
+.hero h1{font-size:44px;line-height:1.15;margin:0 0 14px;letter-spacing:-.02em}.hero p.lead{font-size:19px;color:var(--muted);max-width:680px;margin:0}
+.meta{margin-top:18px;font-size:14px;color:var(--muted)}
+.pill{display:inline-block;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:13px;font-weight:600;margin-bottom:14px}
+.btn{display:inline-block;padding:11px 18px;border-radius:10px;background:var(--accent);color:#fff;font-weight:600}.btn:hover{text-decoration:none;opacity:.92}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+section.block{padding:48px 0;border-bottom:1px solid var(--line)}section.block h2{font-size:26px;margin:0 0 8px;letter-spacing:-.01em}section.block p.sub{color:var(--muted);margin:0 0 26px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}.card h3{margin:0 0 6px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:15px}
+.price{font-size:30px;font-weight:700;margin:6px 0 2px}.price small{font-size:14px;color:var(--muted);font-weight:500}
+.card.hl{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.layout{display:grid;grid-template-columns:240px 1fr;gap:48px;padding:40px 0 64px}
+aside.toc{position:sticky;top:88px;align-self:start;font-size:14px}aside.toc h4{margin:0 0 10px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+aside.toc a{display:block;padding:5px 0 5px 12px;border-left:2px solid var(--line);color:var(--muted)}aside.toc a:hover{color:var(--fg);border-color:var(--accent);text-decoration:none}
+article.doc h2{font-size:24px;margin:40px 0 10px;padding-top:8px;letter-spacing:-.01em}article.doc h3{font-size:18px;margin:28px 0 6px}
+article.doc ul{padding-left:20px}article.doc li{margin:4px 0}article.doc code{font-size:14px;background:var(--bg2);padding:1px 5px;border-radius:5px}
+.glance{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin:6px 0 10px}.glance .card{padding:16px}.glance .card b{display:block;margin-bottom:4px}
+.lang{display:flex;gap:8px;margin:10px 0 0}.lang a{padding:4px 12px;border:1px solid var(--line);border-radius:999px;font-size:14px;color:var(--muted)}
+details{border:1px solid var(--line);border-radius:12px;padding:14px 18px;background:var(--card);margin:10px 0}summary{cursor:pointer;font-weight:600}details p{color:var(--muted);margin:10px 0 0}
+footer.bottom{background:var(--bg2);border-top:1px solid var(--line);padding:36px 0;font-size:14px;color:var(--muted)}
+footer.bottom .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}footer.bottom a{color:var(--muted)}
+@media (max-width:820px){.layout{grid-template-columns:1fr;gap:20px}aside.toc{position:static}.hero h1{font-size:34px}nav.main{gap:14px}}
+</style></head><body>
+<header class="top"><div class="wrap"><a class="brand" href="index.html"><img src="icon.png" alt="">Helmavio</a>
+<nav class="main"><a href="index.html" class="">Home</a><a href="index.html#pricing" class="">Pricing</a><a href="privacy.html" class="on">Privacy</a><a href="support.html" class="">Support</a></nav></div></header>
+
+<section class="hero"><div class="wrap"><span class="pill">Legal</span><h1>Privacy Policy</h1>
+<p class="lead">Helmavio is a desktop app. Your work stays on your computer; you decide which AI provider sees what.</p>
+<div class="meta">Last updated: 8 October 2026 · Applies to Helmavio 1.1.0 and later</div>
+<div class="lang"><a href="#english">English</a><a href="#russian">Русский</a></div></div></section>
+<div class="wrap"><section class="block" style="border:0;padding-bottom:0"><h2>At a glance</h2><p class="sub">The short version. The full policy follows below.</p><div class="glance"><div class="card"><b>Your data stays on your PC</b><p>Projects, missions, results, history and settings are stored locally. We have no access to them.</p></div><div class="card"><b>AI providers you choose</b><p>Task text and needed project files go only to the model provider you configure. Ollama keeps everything local.</p></div><div class="card"><b>No tracking</b><p>No analytics, no telemetry, no crash reports are sent.</p></div><div class="card"><b>Keys are encrypted</b><p>API keys and tokens are encrypted with Windows DPAPI and never written to logs or diagnostics.</p></div><div class="card"><b>Optional payments</b><p>Helmavio Pro is paid through Stripe. We receive billing identifiers and statuses only — never card data.</p></div><div class="card"><b>You are in control</b><p>Delete projects, history, keys and connections in the app at any time.</p></div></div></section></div>
+<div class="wrap layout"><aside class="toc"><h4>Contents</h4><a href="#en-1-data-stored-on-your-computer">1. Data stored on your computer</a><a href="#en-2-data-sent-to-ai-model-providers-you-configure">2. Data sent to AI model providers you configure</a><a href="#en-3-telemetry">3. Telemetry</a><a href="#en-4-logs">4. Logs</a><a href="#en-5-credentials">5. Credentials</a><a href="#en-6-integrations-you-control">6. Integrations you control</a><a href="#en-7-translation">7. Translation</a><a href="#en-8-generative-ai">8. Generative AI</a><a href="#en-9-your-choices-and-deletion">9. Your choices and deletion</a><a href="#en-10-children">10. Children</a><a href="#en-11-contact">11. Contact</a><a href="#en-12-helmavio-pro-optional-payments">12. Helmavio Pro (optional payments)</a><a href="#russian">Русская версия</a><a href="#contact">Contact</a></aside>
+<article class="doc"><h2 id="english" style="margin-top:0">Privacy Policy (English)</h2><p>Helmavio is a Windows desktop application. You describe a goal; built-in roles plan, run and verify the work with AI models <strong>that you choose</strong>. Helmavio has no cloud service, servers or accounts of its own, except the optional Helmavio Pro billing service (section 12).</p>
+<h2 id="en-1-data-stored-on-your-computer">1. Data stored on your computer</h2>
 <ul>
 <li>Projects (names and folders you add), missions, tasks, agent results, proofs and receipts, the event history and its archive, connection settings, schedules, settings and translation cache.</li>
 <li>Location: <code>%APPDATA%\Helmavio\data</code> (an existing <code>%APPDATA%\Завод агентов\data</code> profile from earlier versions is used in place). Windows may redirect new Store app data into its package folder. Existing profiles, explicit profile folders and exported files can remain outside that folder.</li>
 <li>The developer has no access to this data.</li>
 </ul>
-<h3>2. Data sent to AI model providers you configure</h3>
+<h2 id="en-2-data-sent-to-ai-model-providers-you-configure">2. Data sent to AI model providers you configure</h2>
 <ul>
 <li>When a role or agent runs through a provider you configured — a cloud API (OpenAI-compatible or Anthropic-compatible endpoint), Claude Code CLI (your Claude account), or another server you added — the task text, the mission context and the project files the task needs are sent to <strong>that provider</strong>, under <strong>its</strong> terms and privacy policy.</li>
 <li>Local providers (Ollama on this computer, built-in actions marked "no AI model") send nothing outside your computer.</li>
 <li>Paid providers are used only when you allow paid usage; the mission contract can forbid paid APIs.</li>
 </ul>
-<h3>3. Telemetry</h3>
+<h2 id="en-3-telemetry">3. Telemetry</h2>
 <ul>
 <li>Helmavio sends <strong>no</strong> telemetry, analytics, usage statistics or crash reports to the developer or anyone else.</li>
 <li>"Agent events" shown in the app (for example from Claude Code hooks you register yourself) are written only to the local event log.</li>
 </ul>
-<h3>4. Logs</h3>
+<h2 id="en-4-logs">4. Logs</h2>
 <ul>
 <li>The app log and the worker log are stored locally (<code>data\logs</code>, <code>data\factory\logs</code>), size-limited. Detected secrets (API keys, tokens, passwords, private keys) are masked before writing.</li>
 <li>Event-history retention is set by you in Settings; nothing is deleted without your setting.</li>
 <li>"Create diagnostics" (Settings → Support) saves a local file without goals, project names, results, keys or tokens; it is sent only if <strong>you</strong> attach it to a support request.</li>
 </ul>
-<h3>5. Credentials</h3>
+<h2 id="en-5-credentials">5. Credentials</h2>
 <ul>
 <li>API keys and tokens (model providers, GitHub, Telegram, MCP/A2A connections) are encrypted with Windows DPAPI and decrypted only for the operation you allowed. They are never written to logs, diagnostics, task records or agent prompts.</li>
 </ul>
-<h3>6. Integrations you control</h3>
+<h2 id="en-6-integrations-you-control">6. Integrations you control</h2>
 <ul>
 <li>GitHub, Telegram, MCP servers and A2A agents receive data only in calls you allowed (per project, per tool; external calls require your approval of the exact arguments). Remote addresses must use HTTPS. Descriptions and hints from external servers are treated as untrusted data, not instructions.</li>
 </ul>
-<h3>7. Translation</h3>
+<h2 id="en-7-translation">7. Translation</h2>
 <ul>
 <li>Text in another language (agent answers, service descriptions) is translated locally with Ollama, or by the third-party MyMemory service <strong>only after your explicit consent</strong>. Code, paths, links, identifiers and detected secrets are replaced with placeholders and are not sent. Nothing from closed or postponed projects or from privacy mode is sent.</li>
 </ul>
-<h3>8. Generative AI</h3>
+<h2 id="en-8-generative-ai">8. Generative AI</h2>
 <ul>
 <li>Plans, answers and some checks are produced by generative AI and may be inaccurate. Results are labelled, shown with evidence and an independent Reviewer check. You can report a problematic AI answer from the task card; the report is saved locally (and an e-mail draft opens if a support address is configured).</li>
 </ul>
-<h3>9. Your choices and deletion</h3>
+<h2 id="en-9-your-choices-and-deletion">9. Your choices and deletion</h2>
 <ul>
 <li>You can remove projects, clear the event history, delete keys and connections in the app. Uninstalling the desktop (NSIS) version keeps your data; delete <code>%APPDATA%\Helmavio</code> (and <code>%APPDATA%\Завод агентов</code>, if present) to remove it. Uninstalling the Store version removes package-managed state; existing profiles, explicit profile folders and exports outside the package require separate deletion if you want to remove them.</li>
 </ul>
-<h3>10. Children</h3>
+<h2 id="en-10-children">10. Children</h2>
 <ul>
 <li>Helmavio is a productivity tool not directed at children.</li>
 </ul>
-<h3>11. Contact</h3>
+<h2 id="en-11-contact">11. Contact</h2>
 <ul>
 <li>Support and privacy questions: <a href="mailto:ooooooo532@gmail.com">ooooooo532@gmail.com</a>. Support page: https://eluz1um.github.io/helmavio-privacy/support.html</li>
 </ul>
-<h3>12. Helmavio Pro (optional payments)</h3>
+<h2 id="en-12-helmavio-pro-optional-payments">12. Helmavio Pro (optional payments)</h2>
 <ul>
 <li>Helmavio Free works without any Helmavio server. The Pro page asks the Helmavio billing service for the Founder licence counter (no personal data is sent; the service sees your IP address).</li>
 <li>When you buy Pro, the billing service creates an anonymous account (an ID and a recovery key kept in Windows DPAPI) and a random device ID. Payment happens on Stripe Checkout; Stripe processes card details and the billing e-mail under its own privacy policy. Helmavio receives only billing identifiers and statuses (Stripe customer and subscription IDs, plan, period end) — never card data.</li>
 <li>Helmavio never sends Stripe or the billing service prompts, AI conversations, files, agent results, API keys, MCP credentials or project contents.</li>
 <li>The app re-checks the plan with the billing service about every 6 hours while online.</li>
 </ul>
-<hr />
-<h2>Русский</h2>
-<p>Helmavio — приложение для Windows. Вы описываете цель; встроенные роли планируют, выполняют и проверяют работу с помощью AI-моделей, <strong>которые выбираете вы</strong>. Своего облака, серверов и учётных записей у Helmavio нет, кроме необязательного сервиса оплаты Helmavio Pro (п. 12).</p>
+<h2 id="russian">Политика конфиденциальности (русский)</h2><p>Helmavio — приложение для Windows. Вы описываете цель; встроенные роли планируют, выполняют и проверяют работу с помощью AI-моделей, <strong>которые выбираете вы</strong>. Своего облака, серверов и учётных записей у Helmavio нет, кроме необязательного сервиса оплаты Helmavio Pro (п. 12).</p>
 <ol>
 <li><strong>Данные на вашем компьютере</strong>: проекты, миссии, задачи, результаты агентов, доказательства и квитанции, история событий и её архив, подключения, расписания, настройки, кэш перевода — в <code>%APPDATA%\Helmavio\data</code> (существующий профиль <code>%APPDATA%\Завод агентов\data</code> используется на месте). У разработчика доступа к ним нет.</li>
 <li><strong>Поставщики моделей, выбранные вами</strong>: облачному API, Claude Code CLI (ваша учётная запись Claude) или другому подключённому вами серверу отправляются текст задачи, контекст миссии и нужные файлы проекта — на условиях этого поставщика. Ollama и встроенные действия «без AI-модели» ничего не отправляют наружу. Платные поставщики — только если вы это разрешили.</li>
@@ -79,4 +117,11 @@ h1{font-size:28px}h2{font-size:20px;margin-top:28px}h3{font-size:17px;margin-top
 <li><strong>Дети</strong>: приложение не предназначено для детей.</li>
 <li><strong>Контакт</strong>: <a href="mailto:ooooooo532@gmail.com">ooooooo532@gmail.com</a> — поддержка и вопросы о конфиденциальности. Страница поддержки: https://eluz1um.github.io/helmavio-privacy/support.html</li>
 <li><strong>Helmavio Pro (необязательная оплата)</strong>: Helmavio Free работает без серверов Helmavio. Страница Pro запрашивает у сервиса оплаты Helmavio счётчик лицензий Founder (личные данные не передаются; сервис видит ваш IP-адрес). При покупке Pro сервис создаёт анонимный аккаунт (ID и ключ восстановления, который хранится в Windows DPAPI) и случайный ID устройства. Оплата проходит в Stripe Checkout; данные карты и e-mail для счёта обрабатывает Stripe по своей политике. Helmavio получает только идентификаторы и статусы оплаты (ID клиента и подписки Stripe, тариф, дату окончания периода) — никогда данные карты. Запросы, переписка с AI, файлы, результаты агентов, ключи API, данные MCP и содержимое проектов не передаются ни Stripe, ни сервису оплаты. Пока есть интернет, приложение проверяет тариф примерно раз в 6 часов.</li>
-</ol></body></html>
+</ol>
+<h2 id="contact">Contact</h2><p>Questions about privacy or your data: <a href="mailto:ooooooo532@gmail.com">ooooooo532@gmail.com</a>. See also the <a href="support.html">Support</a> page.</p>
+<h2 id="history">Version history</h2><ul><li>8 October 2026 — first public version; added Helmavio Pro (optional payments via Stripe).</li></ul>
+</article></div>
+<footer class="bottom"><div class="wrap"><div><b>Helmavio</b><br>Agent factory for Windows.</div>
+<div><a href="privacy.html">Privacy Policy</a><br><a href="support.html">Support</a><br><a href="mailto:ooooooo532@gmail.com">ooooooo532@gmail.com</a></div>
+<div>© 2026 Helmavio. All rights reserved.<br>Payments are processed by Stripe.</div></div></footer>
+</body></html>
