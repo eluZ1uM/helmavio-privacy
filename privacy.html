@@ -1,0 +1,82 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Helmavio — Privacy Policy</title><style>body{font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;max-width:760px;margin:0 auto;padding:32px 16px;color:#1b1f24;background:#fff}
+@media(prefers-color-scheme:dark){body{color:#e6e6e6;background:#14161a}a{color:#8ab4ff}}
+h1{font-size:28px}h2{font-size:20px;margin-top:28px}h3{font-size:17px;margin-top:22px}nav a{margin-right:16px}code{font-size:14px}hr{border:0;border-top:1px solid #8884;margin:28px 0}</style></head><body><nav><a href="index.html">Helmavio</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav><h1>Helmavio — Privacy Policy / Политика конфиденциальности</h1>
+<p>Last updated: 8 October 2026. Applies to Helmavio 1.1.0 and later.</p>
+<hr />
+<h2>English</h2>
+<p>Helmavio is a Windows desktop application. You describe a goal; built-in roles plan, run and verify the work with AI models <strong>that you choose</strong>. Helmavio has no cloud service, servers or accounts of its own, except the optional Helmavio Pro billing service (section 12).</p>
+<h3>1. Data stored on your computer</h3>
+<ul>
+<li>Projects (names and folders you add), missions, tasks, agent results, proofs and receipts, the event history and its archive, connection settings, schedules, settings and translation cache.</li>
+<li>Location: <code>%APPDATA%\Helmavio\data</code> (an existing <code>%APPDATA%\Завод агентов\data</code> profile from earlier versions is used in place). Windows may redirect new Store app data into its package folder. Existing profiles, explicit profile folders and exported files can remain outside that folder.</li>
+<li>The developer has no access to this data.</li>
+</ul>
+<h3>2. Data sent to AI model providers you configure</h3>
+<ul>
+<li>When a role or agent runs through a provider you configured — a cloud API (OpenAI-compatible or Anthropic-compatible endpoint), Claude Code CLI (your Claude account), or another server you added — the task text, the mission context and the project files the task needs are sent to <strong>that provider</strong>, under <strong>its</strong> terms and privacy policy.</li>
+<li>Local providers (Ollama on this computer, built-in actions marked "no AI model") send nothing outside your computer.</li>
+<li>Paid providers are used only when you allow paid usage; the mission contract can forbid paid APIs.</li>
+</ul>
+<h3>3. Telemetry</h3>
+<ul>
+<li>Helmavio sends <strong>no</strong> telemetry, analytics, usage statistics or crash reports to the developer or anyone else.</li>
+<li>"Agent events" shown in the app (for example from Claude Code hooks you register yourself) are written only to the local event log.</li>
+</ul>
+<h3>4. Logs</h3>
+<ul>
+<li>The app log and the worker log are stored locally (<code>data\logs</code>, <code>data\factory\logs</code>), size-limited. Detected secrets (API keys, tokens, passwords, private keys) are masked before writing.</li>
+<li>Event-history retention is set by you in Settings; nothing is deleted without your setting.</li>
+<li>"Create diagnostics" (Settings → Support) saves a local file without goals, project names, results, keys or tokens; it is sent only if <strong>you</strong> attach it to a support request.</li>
+</ul>
+<h3>5. Credentials</h3>
+<ul>
+<li>API keys and tokens (model providers, GitHub, Telegram, MCP/A2A connections) are encrypted with Windows DPAPI and decrypted only for the operation you allowed. They are never written to logs, diagnostics, task records or agent prompts.</li>
+</ul>
+<h3>6. Integrations you control</h3>
+<ul>
+<li>GitHub, Telegram, MCP servers and A2A agents receive data only in calls you allowed (per project, per tool; external calls require your approval of the exact arguments). Remote addresses must use HTTPS. Descriptions and hints from external servers are treated as untrusted data, not instructions.</li>
+</ul>
+<h3>7. Translation</h3>
+<ul>
+<li>Text in another language (agent answers, service descriptions) is translated locally with Ollama, or by the third-party MyMemory service <strong>only after your explicit consent</strong>. Code, paths, links, identifiers and detected secrets are replaced with placeholders and are not sent. Nothing from closed or postponed projects or from privacy mode is sent.</li>
+</ul>
+<h3>8. Generative AI</h3>
+<ul>
+<li>Plans, answers and some checks are produced by generative AI and may be inaccurate. Results are labelled, shown with evidence and an independent Reviewer check. You can report a problematic AI answer from the task card; the report is saved locally (and an e-mail draft opens if a support address is configured).</li>
+</ul>
+<h3>9. Your choices and deletion</h3>
+<ul>
+<li>You can remove projects, clear the event history, delete keys and connections in the app. Uninstalling the desktop (NSIS) version keeps your data; delete <code>%APPDATA%\Helmavio</code> (and <code>%APPDATA%\Завод агентов</code>, if present) to remove it. Uninstalling the Store version removes package-managed state; existing profiles, explicit profile folders and exports outside the package require separate deletion if you want to remove them.</li>
+</ul>
+<h3>10. Children</h3>
+<ul>
+<li>Helmavio is a productivity tool not directed at children.</li>
+</ul>
+<h3>11. Contact</h3>
+<ul>
+<li>Support and privacy questions: <a href="mailto:ooooooo532@gmail.com">ooooooo532@gmail.com</a>. Support page: https://eluz1um.github.io/helmavio-privacy/support.html</li>
+</ul>
+<h3>12. Helmavio Pro (optional payments)</h3>
+<ul>
+<li>Helmavio Free works without any Helmavio server. The Pro page asks the Helmavio billing service for the Founder licence counter (no personal data is sent; the service sees your IP address).</li>
+<li>When you buy Pro, the billing service creates an anonymous account (an ID and a recovery key kept in Windows DPAPI) and a random device ID. Payment happens on Stripe Checkout; Stripe processes card details and the billing e-mail under its own privacy policy. Helmavio receives only billing identifiers and statuses (Stripe customer and subscription IDs, plan, period end) — never card data.</li>
+<li>Helmavio never sends Stripe or the billing service prompts, AI conversations, files, agent results, API keys, MCP credentials or project contents.</li>
+<li>The app re-checks the plan with the billing service about every 6 hours while online.</li>
+</ul>
+<hr />
+<h2>Русский</h2>
+<p>Helmavio — приложение для Windows. Вы описываете цель; встроенные роли планируют, выполняют и проверяют работу с помощью AI-моделей, <strong>которые выбираете вы</strong>. Своего облака, серверов и учётных записей у Helmavio нет, кроме необязательного сервиса оплаты Helmavio Pro (п. 12).</p>
+<ol>
+<li><strong>Данные на вашем компьютере</strong>: проекты, миссии, задачи, результаты агентов, доказательства и квитанции, история событий и её архив, подключения, расписания, настройки, кэш перевода — в <code>%APPDATA%\Helmavio\data</code> (существующий профиль <code>%APPDATA%\Завод агентов\data</code> используется на месте). У разработчика доступа к ним нет.</li>
+<li><strong>Поставщики моделей, выбранные вами</strong>: облачному API, Claude Code CLI (ваша учётная запись Claude) или другому подключённому вами серверу отправляются текст задачи, контекст миссии и нужные файлы проекта — на условиях этого поставщика. Ollama и встроенные действия «без AI-модели» ничего не отправляют наружу. Платные поставщики — только если вы это разрешили.</li>
+<li><strong>Телеметрия</strong>: не отправляется никакая — ни аналитика, ни статистика, ни отчёты о сбоях.</li>
+<li><strong>Журналы</strong>: только локально, с ограничением размера; секреты маскируются. «Собрать диагностику» сохраняет локальный файл без целей, названий проектов, результатов, ключей и токенов; он уходит в поддержку, только если вы сами его приложите.</li>
+<li><strong>Ключи и токены</strong>: шифруются Windows DPAPI, не попадают в журналы, диагностику, записи задач и запросы агентам.</li>
+<li><strong>Подключения</strong>: GitHub, Telegram, MCP и A2A получают данные только в разрешённых вами вызовах (по проекту, по инструменту, с одобрением точных аргументов). Удалённые адреса — только HTTPS. Описания внешних серверов не считаются доверенными инструкциями.</li>
+<li><strong>Перевод</strong>: локально (Ollama) или сторонним MyMemory — только с вашего явного согласия, без кода, путей, ссылок, идентификаторов и секретов; закрытые и отложенные проекты и режим приватности не отправляются.</li>
+<li><strong>Генеративный ИИ</strong>: результаты могут быть неточными; они помечены, сопровождаются доказательствами и независимой проверкой. О проблемном ответе можно сообщить из карточки задачи.</li>
+<li><strong>Удаление</strong>: удаление версии NSIS сохраняет данные — удалите папку <code>%APPDATA%\Helmavio</code> (и <code>%APPDATA%\Завод агентов</code>, если есть). При удалении версии Store Windows удаляет данные, управляемые пакетом. Старые профили, явно выбранные папки профиля и экспортированные файлы вне пакета могут сохраниться; при необходимости удалите их отдельно.</li>
+<li><strong>Дети</strong>: приложение не предназначено для детей.</li>
+<li><strong>Контакт</strong>: <a href="mailto:ooooooo532@gmail.com">ooooooo532@gmail.com</a> — поддержка и вопросы о конфиденциальности. Страница поддержки: https://eluz1um.github.io/helmavio-privacy/support.html</li>
+<li><strong>Helmavio Pro (необязательная оплата)</strong>: Helmavio Free работает без серверов Helmavio. Страница Pro запрашивает у сервиса оплаты Helmavio счётчик лицензий Founder (личные данные не передаются; сервис видит ваш IP-адрес). При покупке Pro сервис создаёт анонимный аккаунт (ID и ключ восстановления, который хранится в Windows DPAPI) и случайный ID устройства. Оплата проходит в Stripe Checkout; данные карты и e-mail для счёта обрабатывает Stripe по своей политике. Helmavio получает только идентификаторы и статусы оплаты (ID клиента и подписки Stripe, тариф, дату окончания периода) — никогда данные карты. Запросы, переписка с AI, файлы, результаты агентов, ключи API, данные MCP и содержимое проектов не передаются ни Stripe, ни сервису оплаты. Пока есть интернет, приложение проверяет тариф примерно раз в 6 часов.</li>
+</ol></body></html>
